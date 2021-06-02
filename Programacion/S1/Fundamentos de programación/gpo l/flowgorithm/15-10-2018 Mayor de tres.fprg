@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa504"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-15 09:18:50 a.m."/>
+        <attribute name="created" value="YWE1MDQ7QTUwNDsyMDE4LTEwLTE1OzA5OjEyOjA1IGEubS47MTk4NQ=="/>
+        <attribute name="edited" value="YWE1MDQ7QTUwNDsyMDE4LTEwLTE1OzA5OjE4OjUwIGEubS47MTsyMDk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3" type="Integer" array="False" size=""/>
+            <output expression="&quot;Encontrar que n&#250;mero es mayor. &quot;" newline="True"/>
+            <output expression="&quot;Ingresa n&#250;mero 1&quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Ingresa n&#250;mero 2&quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;Ingresa n&#250;mero 3&quot;" newline="True"/>
+            <input variable="n3"/>
+            <if expression="n1 &gt; n2">
+                <then>
+                    <if expression="n1 &gt; n3">
+                        <then>
+                            <output expression="&quot;El mayor es: &quot;&amp;n1" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;El mayor es : &quot;&amp;n3" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="n2 &gt; n3">
+                        <then>
+                            <output expression="&quot;El mayor es: &quot;&amp;n2" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;El mayor es: &quot;&amp;n3" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

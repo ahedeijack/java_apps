@@ -1,0 +1,6 @@
+2019-09-28T22:22:47+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\xampp\wordpress\wp-content\plugins\woocommerce-gateway-paypal-express-checkout\includes\class-wc-gateway-ppec-cart-handler.php on line 5
+
+2019-09-28T22:22:50+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\xampp\wordpress\wp-content\themes\storefront\inc\woocommerce\class-storefront-woocommerce.php on line 9
+
+2019-09-28T22:24:40+00:00 CRITICAL Maximum execution time of 30 seconds exceeded in C:\xampp\htdocs\xampp\wordpress\wp-includes\Requests\Transport\cURL.php on line 441
+

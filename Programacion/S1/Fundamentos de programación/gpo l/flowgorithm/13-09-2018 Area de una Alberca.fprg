@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa501"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-13 09:31:56 a.m."/>
+        <attribute name="created" value="YWE1MDE7QTUwMTsyMDE4LTA5LTEzOzA5OjAzOjA0IGEubS47MTk4NA=="/>
+        <attribute name="edited" value="YWE1MDE7QTUwMTsyMDE4LTA5LTEzOzA5OjMxOjU2IGEubS47MTsyMTAw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ladoAlberca, precioM2, precioPiso, area, diametro, radio, areaPiso, areaCirculo" type="Real" array="False" size=""/>
+            <output expression="&quot;Calculo del precio del piso de una alberca. &quot;" newline="True"/>
+            <output expression="&quot;Ingresa el area de la alberca&quot;" newline="True"/>
+            <input variable="area"/>
+            <output expression="&quot;Cuanto vas a pagar por el piso?&quot;" newline="True"/>
+            <input variable="precioM2"/>
+            <assign variable="ladoAlberca" expression="SQRT(area)"/>
+            <assign variable="diametro" expression="SQRT((ladoAlberca^2)+(ladoAlberca^2))"/>
+            <assign variable="radio" expression="diametro/2"/>
+            <assign variable="areaCirculo" expression="PI*radio^2"/>
+            <assign variable="areaPiso" expression="areaCirculo-area"/>
+            <assign variable="precioPiso" expression="areaPiso*precioM2"/>
+            <output expression="&quot;El area de tu piso a instalar sera de: &quot;&amp;areaPiso&amp;&quot;, y el precio a pagar ser&#225; de : $&quot;&amp;precioPiso" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

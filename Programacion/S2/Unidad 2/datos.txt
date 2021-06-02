@@ -1,0 +1,66 @@
+14
+EM
+431
+Rojas Tierrilla Carlos
+EM
+426
+Najera Ramirez Jorge
+EM
+379
+Chamarras Blanco Angel
+EM
+189
+Rojas Sevilla Aldo
+TA
+697
+Rendon Rojas Aldo
+820
+4.75
+TA
+254
+Rojas Vazquez Jose
+326
+7.75
+TA
+670
+Ugalde Valenzuela Angel
+167
+9.5
+VE
+916
+Rojas Valenzuela Jorge
+15000.0
+3.8
+VE
+570
+Blanco Ramos Franco
+13000.0
+6.0
+AD
+229
+de Santiago Vazquez Carlos
+11
+553.0
+AD
+279
+Argumaniz Sevilla Franco
+12
+166.0
+EJ
+592
+Venezuela Vazquez Luis
+26
+381.0
+12000.0
+EJ
+39
+Tierrilla Rendon Angel
+30
+562.0
+12000.0
+EJ
+508
+Chamarras de Santiago Jose
+25
+325.0
+8500.0

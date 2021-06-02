@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa516"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-08-30 09:47:29 a.m."/>
+        <attribute name="created" value="YWE1MTY7QTUxNjsyMDE4LTA4LTMwOzA5OjAxOjM1IGEubS47MTk5Ng=="/>
+        <attribute name="edited" value="YWE1MTY7QTUxNjsyMDE4LTA4LTMwOzA5OjQ3OjI5IGEubS47MjsyMTE4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Desarrollo de un algoritmo para sacar el area y perimetro de un triangulo&quot;" newline="True"/>
+            <declare name="ladA, ladB, ladC, perimetro, area, s" type="Real" array="False" size=""/>
+            <output expression="&quot;ingresa el valor del lado A: &quot;" newline="True"/>
+            <input variable="ladA"/>
+            <output expression="&quot;ingresa el valor del lado B: &quot;" newline="True"/>
+            <input variable="ladB"/>
+            <output expression="&quot;ingresa el valor del lado C: &quot;" newline="True"/>
+            <input variable="ladC"/>
+            <assign variable="perimetro" expression="ladA+ladB+ladC"/>
+            <assign variable="s" expression="perimetro/2"/>
+            <assign variable="area" expression="sqrt(s*(s-ladA)*(s-ladB)*(s-ladC))"/>
+            <output expression="&quot;El area de tu triangulo con las medidas: &quot;&amp;ladA&amp;&quot;,&quot;&amp;ladB&amp;&quot;,&quot;&amp;ladC&amp;&quot;, es &quot; &amp;area" newline="False"/>
+            <output expression="&quot;, y el perimetro es: &quot; &amp;perimetro&amp; &quot;, y el semiperimetro es: &quot;" newline="False"/>
+        </body>
+    </function>
+</flowgorithm>

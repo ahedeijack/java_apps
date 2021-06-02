@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa504"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-26 09:55:48 a.m."/>
+        <attribute name="created" value="YWE1MDQ7QTUwNDsyMDE4LTEwLTI2OzA5OjIxOjEyIGEubS47MTk4NQ=="/>
+        <attribute name="edited" value="YWE1MDQ7QTUwNDsyMDE4LTEwLTI2OzA5OjU1OjQ4IGEubS47ODsyMTE2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="anguloFinal, anguloIni, angulo" type="Integer" array="False" size=""/>
+            <declare name="x" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingresa el valor del angulo inicial (Grados)&quot;" newline="True"/>
+            <input variable="anguloIni"/>
+            <output expression="&quot;Ingresa el el valor final del angulo (Grados)&quot;" newline="True"/>
+            <input variable="anguloFinal"/>
+            <for variable="angulo" start="anguloIni" end="anguloFinal" direction="inc" step="1">
+                <assign variable="x" expression="(angulo*PI)/180"/>
+                <output expression="&quot;Seno de &quot;&amp;angulo&amp;&quot; es: &quot;&amp;redondear(Sin(x))&amp;&quot; &quot;&amp;&#13;&#10;&quot;Coseno de &quot;&amp;angulo&amp;&quot; es: &quot;&amp;redondear(Cos(x))&amp;&quot; &quot;&amp;&#13;&#10;&quot;Tangente de &quot;&amp;angulo&amp;&quot; es: &quot;&amp;redondear(Tan(x))&amp;&quot; &quot;&amp;&#13;&#10;&quot;Seno de &quot;&amp;angulo&amp;&quot; es: &quot;&amp;redondear(Sin(x))" newline="True"/>
+            </for>
+        </body>
+    </function>
+    <function name="redondear" type="Real" variable="valorRed">
+        <parameters>
+            <parameter name="valor" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="valorRed" type="Real" array="False" size=""/>
+            <assign variable="valorRed" expression="int(valor*10000+0.5)/10000"/>
+        </body>
+    </function>
+</flowgorithm>

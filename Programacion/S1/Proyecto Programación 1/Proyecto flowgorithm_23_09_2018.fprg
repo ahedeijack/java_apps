@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Ahedeijak"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-23 11:13:49 p. m."/>
+        <attribute name="created" value="QWhlZGVpamFrO0RFU0tUT1AtNDFJMDgyRDsyMDE4LTA5LTIzOzAzOjQyOjEyIHAuIG0uOzMzMzQ="/>
+        <attribute name="edited" value="QWhlZGVpamFrO0RFU0tUT1AtNDFJMDgyRDsyMDE4LTA5LTIzOzExOjEzOjQ5IHAuIG0uOzE4OzM1MDU="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Ingreso de variables, separadas por objeto para no generar confusi&#243;n entre los mismos, adem&#225;s de tener un orden. "/>
+            <declare name="energiaM1, energiaP1, energiaC1, high1, vel1, masa1, masaTotal, sumaEnergias" type="Real" array="False" size=""/>
+            <declare name="energiaM2, energiaP2, energiaC2, high2, vel2, masa2" type="Real" array="False" size=""/>
+            <declare name="energiaM3, energiaP3, energiaC3, high3, vel3, masa3" type="Real" array="False" size=""/>
+            <comment text="Fin de declaraciones."/>
+            <output expression="&quot;Calculo de la Energia Mecanica mediante masa, velocidad y altura.&quot;" newline="True"/>
+            <comment text="Asignacion de valores del primer objeto. "/>
+            <output expression="&quot;Inserta la masa del objeto 1:&quot;" newline="True"/>
+            <input variable="masa1"/>
+            <output expression="&quot;Inserta la velocidad(m/s) del objeto 1: &quot;" newline="True"/>
+            <input variable="vel1"/>
+            <output expression="&quot;Inserta la altura(mts) de tu objeto 1: &quot;" newline="True"/>
+            <input variable="high1"/>
+            <comment text="Se crean los metodos para calcular las energias; &quot;EnergiaCinetica, EnergiaPotencial&quot;. As&#237; como una final que guarda la suma de las masas. "/>
+            <assign variable="energiaC1" expression="EnergiaCinetica(masa1, vel1)"/>
+            <assign variable="energiaP1" expression="EnergiaPotencial(masa1, high1)"/>
+            <assign variable="energiaM1" expression="energiaC1+energiaP1"/>
+            <comment text="No se crea un metodo para la suma de las fuerzas, ya que es algo muy simple y de nula complicaci&#243;n de calculo."/>
+            <comment text="Fin de la delcaracion del primer objeto e inicio del segundo."/>
+            <output expression="&quot;Inserta la masa del objeto 2:&quot;" newline="True"/>
+            <input variable="masa2"/>
+            <output expression="&quot;Inserta la velocidad(m/s) del objeto 2: &quot;" newline="True"/>
+            <input variable="vel2"/>
+            <output expression="&quot;Inserta la altura(mts) de tu objeto 2: &quot;" newline="True"/>
+            <input variable="high2"/>
+            <assign variable="energiaC2" expression="EnergiaCinetica(masa2, vel2)"/>
+            <assign variable="energiaP2" expression="EnergiaPotencial(masa2, high2)"/>
+            <assign variable="energiaM2" expression="energiaC2+energiaP2"/>
+            <comment text="Fin de declaraci&#243;n del segundo objeto e inicio del tercero."/>
+            <output expression="&quot;Inserta la masa del objeto 3:&quot;" newline="True"/>
+            <input variable="masa3"/>
+            <output expression="&quot;Inserta la velocidad(m/s) del objeto 3: &quot;" newline="True"/>
+            <input variable="vel3"/>
+            <output expression="&quot;Inserta la altura(mts) de tu objeto 3: &quot;" newline="True"/>
+            <input variable="high3"/>
+            <assign variable="energiaC3" expression="EnergiaCinetica(masa3, vel3)"/>
+            <assign variable="energiaP3" expression="EnergiaPotencial(masa3, high3)"/>
+            <assign variable="energiaM3" expression="energiaC3+energiaP3"/>
+            <comment text="Fin de asignaciones del tercer objeto y salida de datos."/>
+            <output expression="&quot;Energias primer objeto: Energia Cinetica: &quot;&amp;energiaC1&amp;&quot;u, Energia Potencial: &quot;&amp;energiaP1&amp;&quot;u, Energia Mecanica: &quot;&amp;energiaM1&amp;&quot;u.&quot;" newline="True"/>
+            <output expression="&quot;Energias segundo objeto: Energia Cinetica: &quot;&amp;energiaC2&amp;&quot;u, Energia Potencial: &quot;&amp;energiaP2&amp;&quot;u, Energia Mecanica: &quot;&amp;energiaM2&amp;&quot;u.&quot;" newline="True"/>
+            <output expression="&quot;Energias primer objeto: Energia Cinetica: &quot;&amp;energiaC3&amp;&quot;u, Energia Potencial: &quot;&amp;energiaP3&amp;&quot;u, Energia Mecanica: &quot;&amp;energiaM3&amp;&quot;u.&quot;" newline="True"/>
+            <assign variable="masaTotal" expression="SumaDeMasas(masa1, masa2, masa3)"/>
+            <assign variable="sumaEnergias" expression="SumaDeMasas(energiaM1,energiaM2,energiaM3)"/>
+            <comment text="Se crea el metodo &quot;SumaDeMasas&quot; para sacar...la suma de las masas y darle salida. "/>
+            <output expression="&quot;La suma total de las masas es: &quot;&amp;masaTotal" newline="True"/>
+            <comment text="Se suman las energias haciendo el uso del metodo de suma de masas ya que se utiliza la misma operaci&#243;n matematica, as&#237; como requerir el mismo n&#250;mero de parametros."/>
+            <output expression="&quot;La suma total de las energias mecanicas es de: &quot;&amp;sumaEnergias&amp;&quot;u.&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="EnergiaCinetica" type="Real" variable="EC">
+        <parameters>
+            <parameter name="Masa" type="Real" array="False"/>
+            <parameter name="Velocidad" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="EC" type="Real" array="False" size=""/>
+            <assign variable="EC" expression="0.5*Masa*Velocidad^2"/>
+        </body>
+    </function>
+    <function name="EnergiaPotencial" type="Real" variable="EP">
+        <parameters>
+            <parameter name="Masa" type="Real" array="False"/>
+            <parameter name="Altura" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="EP" type="Real" array="False" size=""/>
+            <assign variable="EP" expression="Masa*9.8*Altura"/>
+        </body>
+    </function>
+    <function name="SumaDeMasas" type="Real" variable="SM">
+        <parameters>
+            <parameter name="Masa1" type="Real" array="False"/>
+            <parameter name="Masa2" type="Real" array="False"/>
+            <parameter name="Masa3" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="SM" type="Real" array="False" size=""/>
+            <assign variable="SM" expression="Masa1+Masa2+Masa3"/>
+        </body>
+    </function>
+</flowgorithm>

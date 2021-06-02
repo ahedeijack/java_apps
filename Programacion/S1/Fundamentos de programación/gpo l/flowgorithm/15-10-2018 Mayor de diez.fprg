@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa504"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-15 09:37:53 a.m."/>
+        <attribute name="created" value="YWE1MDQ7QTUwNDsyMDE4LTEwLTE1OzA5OjIxOjQzIGEubS47MTk4Nw=="/>
+        <attribute name="edited" value="YWE1MDQ7QTUwNDsyMDE4LTEwLTE1OzA5OjM3OjUzIGEubS47MzsyMTA1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1, n2, n3, n4, n5, n6, n7, n8, n9, n10, a, b, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingresa el valor 1: &quot;" newline="True"/>
+            <input variable="n1"/>
+            <output expression="&quot;Ingresa el valor 2: &quot;" newline="True"/>
+            <input variable="n2"/>
+            <output expression="&quot;Ingresa el valor 3: &quot;" newline="True"/>
+            <input variable="n3"/>
+            <assign variable="a" expression="mayor(n1, n2, n3)"/>
+            <output expression="&quot;Ingresa el valor 4: &quot;" newline="True"/>
+            <input variable="n4"/>
+            <output expression="&quot;Ingresa el valor 5: &quot;" newline="True"/>
+            <input variable="n5"/>
+            <output expression="&quot;Ingresa el valor 6: &quot;" newline="True"/>
+            <input variable="n6"/>
+            <assign variable="b" expression="mayor(n4, n5, n6)"/>
+            <output expression="&quot;Ingresa el valor 7: &quot;" newline="True"/>
+            <input variable="n7"/>
+            <output expression="&quot;Ingresa el valor 8: &quot;" newline="True"/>
+            <input variable="n8"/>
+            <output expression="&quot;Ingresa el valor 9: &quot;" newline="True"/>
+            <input variable="n9"/>
+            <assign variable="c" expression="mayor(n7, n8, n9)"/>
+            <output expression="&quot;Ingresa el valor 10: &quot;" newline="True"/>
+            <input variable="n10"/>
+            <if expression="a&gt;b">
+                <then>
+                    <if expression="a&gt;c">
+                        <then>
+                            <if expression="a &gt; n10">
+                                <then>
+                                    <output expression="&quot;El n&#250;mero mayor es &quot;&amp;a" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;El n&#250;mero mayor es &quot;&amp;n10" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="c&gt;n10">
+                                <then>
+                                    <output expression="&quot;El n&#250;mero mayor es: &quot;&amp;c" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;El mayor es: &quot;&amp;n10" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="b&gt;c">
+                        <then>
+                            <if expression="b &gt; n10">
+                                <then>
+                                    <output expression="&quot;El n&#250;mero mayor es &quot;&amp;b" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;El n&#250;mero mayor es &quot;&amp;n10" newline="True"/>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <if expression="c&gt;n10">
+                                <then>
+                                    <output expression="&quot;El n&#250;mero mayor es: &quot;&amp;c" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;El mayor es: &quot;&amp;n10" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="mayor" type="Integer" variable="num">
+        <parameters>
+            <parameter name="m1" type="Integer" array="False"/>
+            <parameter name="m2" type="Integer" array="False"/>
+            <parameter name="m3" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <if expression="m1 &gt; m2">
+                <then>
+                    <if expression="m1 &gt; m3">
+                        <then>
+                            <assign variable="num" expression="m1"/>
+                        </then>
+                        <else>
+                            <assign variable="num" expression="m3"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="m2 &gt; m3">
+                        <then>
+                            <assign variable="num" expression="m2"/>
+                        </then>
+                        <else>
+                            <assign variable="num" expression="m3"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

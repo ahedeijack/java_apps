@@ -1,0 +1,124 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Ahedeijak"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-22 05:49:41 p. m."/>
+        <attribute name="created" value="QWhlZGVpamFrO0RFU0tUT1AtNDFJMDgyRDsyMDE4LTEwLTIyOzAxOjQyOjA3IHAuIG0uOzMzMjc="/>
+        <attribute name="edited" value="QWhlZGVpamFrO0RFU0tUT1AtNDFJMDgyRDsyMDE4LTEwLTIyOzA1OjQ5OjQxIHAuIG0uOzE4OzM1MDA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ex1, prom1, prom2" type="Real" array="False" size=""/>
+            <declare name="ex2, ex3, ex4" type="String" array="False" size=""/>
+            <declare name="ex2F, ex3F, ex4F" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingresa el valor de tu primer calificaci&#243;n (0-100)&quot;" newline="True"/>
+            <input variable="ex1"/>
+            <output expression="&quot;Ingresa el valor de tu segunda calificaci&#243;n (A-F)&quot;" newline="True"/>
+            <input variable="ex2"/>
+            <output expression="&quot;Ingresa el valor de tu tercer calificaci&#243;n (A-F)&quot;" newline="True"/>
+            <input variable="ex3"/>
+            <output expression="&quot;Ingresa el valor de tu cuarta calificaci&#243;n (A-F)&quot;" newline="True"/>
+            <input variable="ex4"/>
+            <assign variable="ex2F" expression="valorEx(ex2)"/>
+            <assign variable="ex3F" expression="valorEx(ex3)"/>
+            <assign variable="ex4F" expression="valorEx(ex4)"/>
+            <assign variable="prom1" expression="(ex1+ex2F+ex3F+ex4F)/4"/>
+            <assign variable="prom2" expression="valorExprom(prom1)"/>
+        </body>
+    </function>
+    <function name="valorEx" type="Real" variable="val">
+        <parameters>
+            <parameter name="calF" type="String" array="False"/>
+        </parameters>
+        <body>
+            <declare name="val" type="Real" array="False" size=""/>
+            <if expression="calF == &quot;A&quot;">
+                <then>
+                    <assign variable="val" expression="100"/>
+                </then>
+                <else>
+                    <if expression="calF == &quot;B&quot;">
+                        <then>
+                            <assign variable="val" expression="90"/>
+                        </then>
+                        <else>
+                            <if expression="calF == &quot;C&quot;">
+                                <then>
+                                    <assign variable="val" expression="80"/>
+                                </then>
+                                <else>
+                                    <if expression="calF == &quot;D&quot;">
+                                        <then>
+                                            <assign variable="val" expression="70"/>
+                                        </then>
+                                        <else>
+                                            <if expression="calF == &quot;E&quot;">
+                                                <then>
+                                                    <assign variable="val" expression="60"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="calF == &quot;F&quot;">
+                                                        <then>
+                                                            <assign variable="val" expression="50"/>
+                                                        </then>
+                                                        <else/>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+    <function name="valorExprom" type="Real" variable="Final">
+        <parameters>
+            <parameter name="sumaF" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="Final" type="Real" array="False" size=""/>
+            <assign variable="Final" expression="10"/>
+            <if expression="sumaF &gt;= 90">
+                <then>
+                    <output expression="&quot;Tu calificaci&#243;n final fue de: [&quot;&amp;sumaF&amp;&quot;]. &#161;&#161;Excelente!! &quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="sumaF &lt;= 90 || sumaF &gt;= 80">
+                        <then>
+                            <output expression="&quot;Tu calificaci&#243;n final fue de: [&quot;&amp;sumaF&amp;&quot;]. &#161;&#161;Bueno!!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="sumaF &lt;= 80 || sumaF &gt;= 70">
+                                <then>
+                                    <output expression="&quot;Tu calificaci&#243;n final fue de: [&quot;&amp;sumaF&amp;&quot;]. &#161;&#161;Regular!!&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="sumaF &lt;= 70 || sumaF &gt;= 60">
+                                        <then>
+                                            <output expression="&quot;Tu calificaci&#243;n final fue de: [&quot;&amp;sumaF&amp;&quot;]. &#161;&#161;Suficiente!!&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="sumaF &lt;= 60 || sumaF &gt;= 0">
+                                                <then>
+                                                    <output expression="&quot;Tu calificaci&#243;n final fue de: [&quot;&amp;sumaF&amp;&quot;]. &#161;&#161;Insuficiente!!&quot;" newline="True"/>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

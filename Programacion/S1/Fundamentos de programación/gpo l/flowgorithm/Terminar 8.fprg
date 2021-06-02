@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa532"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-05 09:50:11 a.m."/>
+        <attribute name="created" value="YWE1MzI7QTUzMjsyMDE4LTA5LTA1OzA5OjAyOjI3IGEubS47MTk5Nw=="/>
+        <attribute name="edited" value="YWE1MzI7QTUzMjsyMDE4LTA5LTA1OzA5OjUwOjExIGEubS47MTsyMTAx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Tienda! Promocion de descuento! Los &#250;ltimos 4 digitos son tu descuento! ;)  &quot;" newline="True"/>
+            <declare name="desc, cos1D, cos2D, cos3D, res1, res2, res3, pres, compra" type="Integer" array="False" size=""/>
+            <declare name="folio" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingresa tu folio! &quot;" newline="True"/>
+            <input variable="folio"/>
+            <output expression="&quot;Ingresa el valor de tu compra: &quot;" newline="True"/>
+            <input variable="compra"/>
+            <assign variable="cos1D" expression="folio/10"/>
+            <assign variable="res1" expression="folio%10"/>
+            <assign variable="cos2D" expression="cos1D/10"/>
+            <assign variable="res2" expression="cos1D%10"/>
+            <assign variable="cos3D" expression="cos2D/10"/>
+            <assign variable="res3" expression="cos2D%10"/>
+            <output expression="&quot;Valor de tu folio es: R1&quot;&amp;res1&amp;&quot;, R2: &quot;&amp;res2&amp;&quot;, R3&quot;&amp;res3" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

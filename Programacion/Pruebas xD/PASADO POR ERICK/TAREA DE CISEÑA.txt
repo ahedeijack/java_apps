@@ -1,0 +1,9 @@
+EN EL CONTEXTO DE LA POO(programacion orientada a objetos), CONSULTAR LOS SIGUIENTES CONCEPTOS
+*POO(programacion orientada a objetos)
+*Abstraccion
+*Encapsulamiento
+*Clase
+*Objeto
+*Atributo o Propiedad
+*Metodo
+Y UN EJEMPLODE CADA UNO TOMADO DEL MUNDO REAL

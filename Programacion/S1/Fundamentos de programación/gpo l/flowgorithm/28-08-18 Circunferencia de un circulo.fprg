@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa517"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-08-28 09:46:55 a.m."/>
+        <attribute name="created" value="YWE1MTc7QTUxNzsyMDE4LTA4LTI4OzA5OjEwOjQ2IGEubS47MjAwNw=="/>
+        <attribute name="edited" value="YWE1MTc7QTUxNzsyMDE4LTA4LTI4OzA5OjQ2OjU1IGEubS47MjsyMTI1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="radio, area, diametro, circunferencia" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingresa el radio del circulo! &quot;" newline="True"/>
+            <input variable="radio"/>
+            <assign variable="area" expression="pi*radio^2"/>
+            <assign variable="diametro" expression="radio*2"/>
+            <assign variable="circunferencia" expression="pi*diametro"/>
+            <output expression="&quot;El area es igual a: &quot;&amp;area" newline="True"/>
+            <output expression="&quot;El diametro es &quot;&amp;diametro" newline="False"/>
+            <output expression="&quot;, y la circunferencia es: &quot;&amp;circunferencia" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

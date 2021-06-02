@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa516"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-08-31 09:37:55 a.m."/>
+        <attribute name="created" value="YWE1MTY7QTUxNjsyMDE4LTA4LTMxOzA5OjI3OjQyIGEubS47MjAwMw=="/>
+        <attribute name="edited" value="YWE1MTY7QTUxNjsyMDE4LTA4LTMxOzA5OjM3OjU1IGEubS47MTsyMTE2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="cal, calQ, calM, calF" type="Real" array="False" size=""/>
+            <declare name="calR" type="Integer" array="False" size=""/>
+            <output expression="&quot;Algoritmo para generar la calificaci&#243;n de un alumno&quot;" newline="True"/>
+            <output expression="&quot;Ingresa la calificaci&#243;n de Quimica: &quot;" newline="True"/>
+            <input variable="calQ"/>
+            <output expression="&quot;Ingresa la calificaci&#243;n de Fisica: &quot;" newline="True"/>
+            <input variable="calF"/>
+            <output expression="&quot;Ingresa la calificaci&#243;n de Matematicas: &quot;" newline="True"/>
+            <input variable="calM"/>
+            <assign variable="calR" expression="((calQ*0.25)+(calM*0.40)+(calF*0.40))"/>
+            <output expression="&quot;La calificaci&#243;n es de Fisica es: &quot;&amp;calF" newline="True"/>
+            <output expression="&quot;La calificaci&#243;n de Matematicas es: &quot;&amp;calM" newline="True"/>
+            <output expression="&quot;La calificaci&#243;n de Quimica es: &quot;&amp;calQ" newline="True"/>
+            <output expression="&quot;La calificaci&#243;n promedio es: &quot;&amp;calR" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

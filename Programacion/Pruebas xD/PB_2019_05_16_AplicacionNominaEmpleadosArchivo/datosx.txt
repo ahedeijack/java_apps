@@ -1,0 +1,150 @@
+32
+E
+835
+Ruiz Perez Elena
+EJ
+569
+Rangel Mendez Elena
+17
+326.0
+4500.0
+A
+424
+Ramirez Arias Armando
+25
+252.0
+EJ
+398
+Blanco Perez Maria
+11
+488.0
+19000.0
+A
+544
+Blanco Ruiz Consuelo
+19
+382.0
+T
+229
+Mendez Mares Martha
+950
+5.75
+V
+511
+Salazar Rangel Elena
+11000.0
+3.4000000000000004
+EJ
+948
+Mares Alvarado Diana
+9
+492.0
+8500.0
+A
+344
+Gomez Hernandez Yolanda
+17
+427.0
+E
+223
+Garcia Hernandez Laura
+E
+389
+Valdes Gonzalez Pedro
+V
+906
+Alvarado Salazar Pedro
+51000.0
+3.6
+T
+89
+Salazar Arias Luis
+697
+7.0
+A
+576
+Perez Mares Raul
+8
+526.0
+A
+69
+Salazar Rangel Luis
+24
+351.0
+E
+608
+Mendez Ruiz Luis
+E
+805
+Gonzalez Hernandez Consuelo
+E
+15
+Garcia Rangel Pedro
+A
+864
+Mendez Ramirez Juan
+13
+349.0
+V
+966
+Gonzalez Lopez Jesus
+43000.0
+5.6000000000000005
+E
+488
+Salazar Alvarado Jesus
+EJ
+319
+Gomez Hernandez Maria
+28
+175.0
+8500.0
+A
+272
+Ramirez Arias Jaime
+27
+220.0
+E
+622
+Mendez Ruiz Jorge
+A
+733
+Rangel Mendez Consuelo
+18
+207.0
+EJ
+804
+Mendez Ruiz Jorge
+29
+301.0
+13000.0
+EJ
+850
+Gomez Mendez Beatriz
+27
+439.0
+14000.0
+V
+205
+Arias Arias Pedro
+30000.0
+3.4000000000000004
+EJ
+686
+Blanco Ruiz Yolanda
+20
+110.0
+5500.0
+T
+937
+Salazar Arias Juan
+649
+3.0
+E
+702
+Ruiz Gomez Consuelo
+T
+762
+Blanco Favela Beatriz
+508
+4.75

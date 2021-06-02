@@ -1,0 +1,24 @@
+2019-10-01T22:06:20+00:00 CRITICAL require(): Failed opening required 'inc/storefront-template-hooks.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\xampp\wordpress-5.2.3\wordpress\wp-content\themes\storefront\functions.php on line 32
+
+2019-10-01T22:06:24+00:00 CRITICAL require(): Failed opening required 'inc/storefront-template-hooks.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\xampp\wordpress-5.2.3\wordpress\wp-content\themes\storefront\functions.php on line 32
+
+2019-10-01T22:06:26+00:00 CRITICAL require(): Failed opening required 'inc/storefront-template-hooks.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\xampp\wordpress-5.2.3\wordpress\wp-content\themes\storefront\functions.php on line 32
+
+2019-10-01T22:06:29+00:00 CRITICAL require(): Failed opening required 'inc/storefront-template-hooks.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\xampp\wordpress-5.2.3\wordpress\wp-content\themes\storefront\functions.php on line 32
+
+2019-10-01T22:06:42+00:00 CRITICAL require(): Failed opening required 'inc/storefront-template-hooks.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\xampp\wordpress-5.2.3\wordpress\wp-content\themes\storefront\functions.php on line 32
+
+2019-10-01T22:06:44+00:00 CRITICAL require(): Failed opening required 'inc/storefront-template-hooks.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\xampp\wordpress-5.2.3\wordpress\wp-content\themes\storefront\functions.php on line 32
+
+2019-10-01T22:06:48+00:00 CRITICAL require(): Failed opening required 'inc/storefront-template-hooks.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\xampp\wordpress-5.2.3\wordpress\wp-content\themes\storefront\functions.php on line 32
+
+2019-10-01T22:06:58+00:00 CRITICAL require(): Failed opening required 'inc/storefront-template-hooks.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\xampp\wordpress-5.2.3\wordpress\wp-content\themes\storefront\functions.php on line 32
+
+2019-10-01T22:07:03+00:00 CRITICAL require(): Failed opening required 'inc/storefront-template-hooks.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\xampp\wordpress-5.2.3\wordpress\wp-content\themes\storefront\functions.php on line 32
+
+2019-10-01T22:07:12+00:00 CRITICAL require(): Failed opening required 'inc/storefront-template-hooks.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\xampp\wordpress-5.2.3\wordpress\wp-content\themes\storefront\functions.php on line 32
+
+2019-10-01T22:08:04+00:00 CRITICAL require(): Failed opening required 'inc/storefront-template-hooks.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\xampp\wordpress-5.2.3\wordpress\wp-content\themes\storefront\functions.php on line 32
+
+2019-10-01T22:08:37+00:00 CRITICAL require(): Failed opening required 'inc/storefront-template-hooks.php' (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\xampp\wordpress-5.2.3\wordpress\wp-content\themes\storefront\functions.php on line 32
+

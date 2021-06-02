@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa502"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-06 09:53:42 a.m."/>
+        <attribute name="created" value="YWE1MDI7QTUwMjsyMDE4LTA5LTA2OzA5OjQ3OjU2IGEubS47MjAwMw=="/>
+        <attribute name="edited" value="YWE1MDI7QTUwMjsyMDE4LTA5LTA2OzA5OjUzOjQyIGEubS47MTsyMTAz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num1, num2, sum, mpc" type="Real" array="False" size=""/>
+            <output expression="&quot;Dada una suma y una multiplicacion, encontrare dos n&#250;meros que puedan servir para hacer ambas operaciones. &quot;" newline="True"/>
+            <output expression="&quot;Dame tu suma: &quot;" newline="True"/>
+            <input variable="sum"/>
+            <output expression="&quot;Dame tu multiplicaci&#243;n : &quot;" newline="True"/>
+            <input variable="mpc"/>
+            <assign variable="num2" expression="(sum+SQRT((sum)^2-4*mpc))/2"/>
+            <assign variable="num1" expression="sum-num2"/>
+            <output expression="&quot;El n&#250;mero 1 es: [&quot;&amp;num1&amp;&quot;], y el n&#250;mero 2 es: [&quot;&amp;num2&amp;&quot;]&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

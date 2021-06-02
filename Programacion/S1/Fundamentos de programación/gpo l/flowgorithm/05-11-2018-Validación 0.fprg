@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa504"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-11-05 09:57:14 a.m."/>
+        <attribute name="created" value="YWE1MDQ7QTUwNDsyMDE4LTExLTA1OzA5OjA5OjIxIGEubS47MTk4OQ=="/>
+        <attribute name="edited" value="YWE1MDQ7QTUwNDsyMDE4LTExLTA1OzA5OjU3OjE0IGEubS47MzsyMTA0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dividendo, divisor, cociente" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingresa el dividendo &quot;" newline="True"/>
+            <input variable="dividendo"/>
+            <do expression="divisor == 0">
+                <output expression="&quot;Ingresa el divisor &quot;" newline="True"/>
+                <input variable="divisor"/>
+            </do>
+            <assign variable="cociente" expression="dividendo / divisor"/>
+            <output expression="dividendo&amp; &quot; / &quot; &amp;divisor&amp; &quot; = &quot;&amp;cociente" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

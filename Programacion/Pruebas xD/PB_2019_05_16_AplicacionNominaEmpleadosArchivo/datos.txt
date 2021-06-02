@@ -1,0 +1,425 @@
+91
+T
+333
+Ramirez Blanco Diana
+686
+9.75
+V
+516
+Garcia Blanco Fernanda
+65000.0
+5.0
+A
+926
+Garcia Favela Raul
+24
+133.0
+E
+825
+Valdes Gonzalez Pedro
+V
+832
+Garcia Mares Jesus
+59000.0
+3.2
+A
+141
+Mendez Ramirez Jose
+30
+158.0
+E
+836
+Rangel Ramirez Yolanda
+E
+351
+Perez Ruiz Elena
+EJ
+824
+Gonzalez Garcia Martha
+22
+286.0
+4000.0
+A
+572
+Lopez Blanco Pedro
+27
+333.0
+T
+190
+Arias Valdes Luis
+112
+4.25
+V
+48
+Garcia Blanco Jesus
+49000.0
+5.800000000000001
+A
+518
+Salazar Mendez Jose
+30
+472.0
+T
+265
+Valdes Blanco Martha
+878
+4.25
+V
+852
+Gomez Lopez Fernanda
+11000.0
+7.2
+T
+263
+Valdes Ramirez Fernanda
+346
+8.75
+T
+638
+Mares Alvarado Maria
+803
+10.0
+E
+117
+Alvarado Garcia Fernanda
+A
+74
+Arias Rangel Laura
+26
+433.0
+EJ
+798
+Hernandez Ruiz Jorge
+18
+415.0
+8500.0
+V
+90
+Blanco Gomez Jaime
+69000.0
+3.0
+V
+619
+Gomez Garcia Jorge
+37000.0
+5.0
+V
+162
+Ruiz Perez Jaime
+54000.0
+6.800000000000001
+V
+434
+Mendez Lopez Laura
+16000.0
+2.8000000000000003
+EJ
+783
+Gonzalez Ruiz Jaime
+19
+501.0
+8500.0
+V
+791
+Mendez Blanco Fernanda
+43000.0
+3.4000000000000004
+A
+312
+Rangel Gomez Beatriz
+12
+570.0
+V
+518
+Alvarado Gomez Jorge
+20000.0
+5.0
+A
+831
+Alvarado Lopez Maria
+23
+490.0
+V
+806
+Blanco Hernandez Fernanda
+66000.0
+4.6000000000000005
+A
+664
+Ruiz Valdes Elena
+20
+102.0
+A
+966
+Arias Ruiz Fernanda
+20
+443.0
+V
+623
+Salazar Mendez Jesus
+28000.0
+6.4
+E
+401
+Blanco Ruiz Yolanda
+EJ
+532
+Ruiz Hernandez Fernanda
+27
+362.0
+5000.0
+EJ
+420
+Gonzalez Salazar Maria
+15
+110.0
+2000.0
+T
+985
+Favela Salazar Elena
+327
+5.25
+EJ
+757
+Mendez Favela Jaime
+19
+245.0
+8000.0
+E
+858
+Lopez Mendez Raul
+E
+445
+Alvarado Garcia Juan
+A
+650
+Perez Rangel Martha
+21
+329.0
+T
+861
+Rangel Mares Fernanda
+100
+6.0
+T
+603
+Valdes Garcia Consuelo
+822
+5.0
+EJ
+155
+Favela Gonzalez Jose
+20
+280.0
+10000.0
+EJ
+621
+Valdes Garcia Jaime
+6
+385.0
+2500.0
+E
+173
+Favela Mendez Jose
+E
+348
+Mendez Rangel Juan
+EJ
+395
+Alvarado Garcia Fernanda
+14
+473.0
+10000.0
+A
+909
+Valdes Favela Juan
+18
+419.0
+T
+448
+Gonzalez Gonzalez Martha
+110
+7.25
+V
+255
+Arias Mares Pedro
+49000.0
+5.0
+E
+800
+Garcia Ramirez Jesus
+T
+29
+Ramirez Mares Elena
+358
+4.75
+T
+162
+Blanco Gonzalez Jesus
+499
+4.5
+E
+522
+Ramirez Valdes Diana
+T
+397
+Blanco Gomez Yolanda
+700
+6.0
+T
+306
+Salazar Arias Laura
+988
+7.0
+V
+389
+Mares Favela Luis
+19000.0
+6.2
+T
+14
+Ruiz Blanco Jose
+670
+7.75
+V
+598
+Gonzalez Alvarado Laura
+67000.0
+5.4
+T
+551
+Garcia Alvarado Yolanda
+307
+8.75
+A
+959
+Rangel Alvarado Laura
+6
+425.0
+T
+808
+Valdes Ruiz Elena
+476
+5.25
+T
+591
+Valdes Gomez Raul
+711
+9.25
+A
+751
+Lopez Rangel Maria
+16
+460.0
+E
+129
+Valdes Gomez Beatriz
+T
+83
+Favela Valdes Maria
+738
+7.0
+V
+643
+Ruiz Ruiz Elena
+26000.0
+7.4
+E
+862
+Valdes Hernandez Jose
+V
+833
+Ramirez Ruiz Jorge
+29000.0
+5.0
+A
+827
+Arias Gomez Jesus
+27
+465.0
+A
+913
+Gomez Mendez Jose
+25
+467.0
+EJ
+609
+Valdes Garcia Armando
+29
+291.0
+6000.0
+EJ
+82
+Rangel Perez Diana
+6
+457.0
+18500.0
+E
+599
+Valdes Salazar Pedro
+E
+171
+Mendez Hernandez Consuelo
+T
+778
+Rangel Ruiz Yolanda
+862
+5.0
+V
+374
+Favela Ruiz Diana
+54000.0
+3.6
+T
+715
+Lopez Perez Luis
+998
+9.75
+E
+72
+Lopez Mendez Jose
+E
+939
+Perez Ruiz Pedro
+V
+295
+Valdes Ramirez Martha
+53000.0
+2.2
+V
+500
+Gomez Ramirez Jaime
+12000.0
+3.2
+E
+827
+Gomez Garcia Consuelo
+E
+957
+Mendez Mendez Consuelo
+A
+248
+Salazar Ruiz Raul
+24
+517.0
+V
+765
+Garcia Salazar Jorge
+6000.0
+3.6
+V
+849
+Favela Rangel Beatriz
+12000.0
+4.0
+E
+454
+Mendez Alvarado Raul
+A
+244
+Alvarado Lopez Martha
+29
+128.0
+E
+18
+Favela Perez Jaime

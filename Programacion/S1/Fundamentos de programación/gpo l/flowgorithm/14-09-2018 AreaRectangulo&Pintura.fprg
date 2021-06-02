@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa520"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-14 09:52:50 a.m."/>
+        <attribute name="created" value="YWE1MjA7QTUyMDsyMDE4LTA5LTE0OzA5OjI5OjE5IGEubS47MjAwMQ=="/>
+        <attribute name="edited" value="YWE1MjA7QTUyMDsyMDE4LTA5LTE0OzA5OjUyOjUwIGEubS47MzsyMTAy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="basePlaca, alturaPlaca, baseOrificio1, alturaOrificio1, baseOrificio2, alturaOrificio2, areaPintura, areaPlaca, areaOrificio1, areaOrificio2" type="Real" array="False" size=""/>
+            <output expression="&quot;Calcula el area a pintar de uina placa con dos orificios de diferentes tama&#241;os. &quot;" newline="True"/>
+            <output expression="&quot;Ingresa la altura de tu placa principal: &quot;" newline="True"/>
+            <input variable="alturaPlaca"/>
+            <output expression="&quot;Ingresa la base de tu placa principal: &quot;" newline="True"/>
+            <input variable="basePlaca"/>
+            <output expression="&quot;Ingresa la altura del primer orificio: &quot;" newline="True"/>
+            <input variable="alturaOrificio1"/>
+            <output expression="&quot;Ingresa la base de tu primer Orificio: &quot;" newline="True"/>
+            <input variable="baseOrificio1"/>
+            <output expression="&quot;Ingresa la altura de tu segundo orificio: &quot;" newline="True"/>
+            <input variable="alturaOrificio2"/>
+            <output expression="&quot;Ingresa la base de tu segundo Orificio: &quot;" newline="True"/>
+            <input variable="baseOrificio2"/>
+            <assign variable="areaPlaca" expression="arearectangular(basePlaca, alturaPlaca)"/>
+            <assign variable="areaOrificio1" expression="arearectangular(baseOrificio1, alturaOrificio1)"/>
+            <assign variable="areaOrificio2" expression="arearectangular(baseOrificio2, alturaOrificio2)"/>
+            <assign variable="areaPintura" expression="areaPlaca-(areaOrificio1+areaOrificio2)"/>
+            <output expression="&quot;El area a pintar de tu placa con un area de:&quot;&amp;areaPlaca&amp;&quot;U. es: &quot;&amp;areaPintura&amp;&quot;U.&quot;" newline="True"/>
+        </body>
+    </function>
+    <function name="arearectangular" type="Real" variable="area">
+        <parameters>
+            <parameter name="base" type="Real" array="False"/>
+            <parameter name="altura" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <declare name="area" type="Real" array="False" size=""/>
+            <assign variable="area" expression="base*altura"/>
+        </body>
+    </function>
+</flowgorithm>

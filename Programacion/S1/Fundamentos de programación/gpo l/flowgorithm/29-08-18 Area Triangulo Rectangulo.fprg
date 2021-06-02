@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa516"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-08-29 09:42:46 a.m."/>
+        <attribute name="created" value="YWE1MTY7QTUxNjsyMDE4LTA4LTI5OzA5OjE3OjUzIGEubS47MjAxMQ=="/>
+        <attribute name="edited" value="YWE1MTY7QTUxNjsyMDE4LTA4LTI5OzA5OjQyOjQ2IGEubS47MTsyMTE5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Dados los catetos de un triangulo rectuangulo, diese&#241;a un algoritmo para calcular su area y perimetro: &quot;" newline="True"/>
+            <declare name="cat1, cat2, cat3, area, perimetro" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingresa el valor de tu cateto 1&quot;" newline="True"/>
+            <input variable="cat1"/>
+            <output expression="&quot;Ingresa el valor de tu cateto 2 &quot;" newline="True"/>
+            <input variable="cat2"/>
+            <assign variable="cat3" expression="sqrt(cat1^2+cat2^2)"/>
+            <output expression="&quot;El valor del cateto 3 (hipotenusa) es: &quot;&amp;cat3" newline="True"/>
+            <assign variable="area" expression="(cat1*cat2)/2"/>
+            <assign variable="perimetro" expression="cat1+cat2+cat3"/>
+            <output expression="&quot;El area de tu triangulo rectangulo es: &quot;&amp;area" newline="True"/>
+            <output expression="&quot;Y el perimetro es: &quot;&amp;perimetro" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

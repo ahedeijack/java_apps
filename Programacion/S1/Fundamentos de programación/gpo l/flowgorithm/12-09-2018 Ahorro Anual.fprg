@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa501"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-12 09:56:13 a.m."/>
+        <attribute name="created" value="YWE1MDE7QTUwMTsyMDE4LTA5LTEyOzA5OjEyOjI5IGEubS47MTk5MA=="/>
+        <attribute name="edited" value="YWE1MDE7QTUwMTsyMDE4LTA5LTEyOzA5OjU2OjEzIGEubS47MTsyMDk5"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sueldo, ahorro, auto, hipoteca, sueldoAnual, gastoCorriente, gastoHipoteca, gMensual" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingresa tu sueldo mensual: &quot;" newline="True"/>
+            <input variable="sueldo"/>
+            <output expression="&quot;Ingresa el porcentaje de la hipoteca: &quot;" newline="True"/>
+            <input variable="hipoteca"/>
+            <output expression="&quot;hola jaja&quot;" newline="True"/>
+            <assign variable="gastoCorriente" expression="sueldo*(50/100)"/>
+            <assign variable="gastoHipoteca" expression="sueldo * (hipoteca/100)"/>
+            <assign variable="auto" expression="gastoHipoteca"/>
+            <assign variable="gMensual" expression="gastoCorriente+gastoHipoteca+auto"/>
+            <assign variable="ahorro" expression="sueldo - gMensual"/>
+            <assign variable="sueldoAnual" expression="ahorro*12"/>
+            <output expression="&quot;El gasto en hipoteca anual sera de: &quot;&amp;gastoHipoteca&amp; &quot;, tu gasto para el automovil es de : &quot;&amp;auto&amp;&quot;, y el ahorro de tu sueldo anual es de : &quot;&amp;sueldoAnual" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

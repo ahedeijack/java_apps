@@ -1,0 +1,97 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Ahedeijak"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-05-13 10:15:30 PM"/>
+        <attribute name="created" value="QWhlZGVpamFrO0RFU0tUT1AtNDFJMDgyRDsyMDE5LTA1LTEzOzA5OjI0OjIyIFBNOzMxNDk="/>
+        <attribute name="edited" value="QWhlZGVpamFrO0RFU0tUT1AtNDFJMDgyRDsyMDE5LTA1LTEzOzEwOjE1OjMwIFBNOzE3OzMzMDM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sumaTomate, prodTomate, sumaLechuga, prodLechuga, sumaChicharo, prodChicharo, sumaZanahoria, prodZanahoria, ventaTotalTomate, ventaTotalLechuga, ventaTotalChicharo, ventaTotalZanahoria, precioTomate, precioLechuga, precioZanahoria, precioChicharo, ventaTotal" type="Real" array="False" size=""/>
+            <output expression="&quot;Granja el pollon&quot;" newline="True"/>
+            <output expression="&quot;Venta Tomate 2018&quot;" newline="True"/>
+            <assign variable="sumaTomate" expression="0"/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <for variable="n" start="1" end="12" direction="inc" step="1">
+                <output expression="&quot;Produccion del mes &quot; &amp;(n)&amp; &quot; en KG:&quot;" newline="True"/>
+                <input variable="prodTomate"/>
+                <assign variable="sumaTomate" expression="sumaTomate+prodTomate"/>
+            </for>
+            <output expression="&quot;Precio de tomate: &quot;" newline="True"/>
+            <input variable="precioTomate"/>
+            <output expression="&quot;     ---     &quot;" newline="True"/>
+            <output expression="&quot;Venta Lechuga 2018&quot;" newline="True"/>
+            <assign variable="sumaLechuga" expression="0"/>
+            <for variable="n" start="1" end="12" direction="inc" step="1">
+                <output expression="&quot;Produccion del mes &quot; &amp;(n)&amp; &quot; en KG:&quot;" newline="True"/>
+                <input variable="prodLechuga"/>
+                <assign variable="sumaLechuga" expression="sumaLechuga+prodLechuga"/>
+            </for>
+            <output expression="&quot;Precio de Lechuga: &quot;" newline="True"/>
+            <input variable="precioLechuga"/>
+            <output expression="&quot;     ---     &quot;" newline="True"/>
+            <output expression="&quot;Venta Zanahora 2018&quot;" newline="True"/>
+            <assign variable="sumaZanahoria" expression="0"/>
+            <for variable="n" start="1" end="12" direction="inc" step="1">
+                <output expression="&quot;Produccion del mes &quot; &amp;(n)&amp; &quot; en KG:&quot;" newline="True"/>
+                <input variable="prodZanahoria"/>
+                <assign variable="sumaZanahoria" expression="sumaZanahoria+prodZanahoria"/>
+            </for>
+            <output expression="&quot;Precio de Zanahoria: &quot;" newline="True"/>
+            <input variable="precioZanahoria"/>
+            <output expression="&quot;     ---     &quot;" newline="True"/>
+            <output expression="&quot;Venta Chicharo 2018&quot;" newline="True"/>
+            <assign variable="sumaChicharo" expression="0"/>
+            <for variable="n" start="1" end="12" direction="inc" step="1">
+                <output expression="&quot;Produccion del mes &quot; &amp;(n)&amp; &quot; en KG:&quot;" newline="True"/>
+                <input variable="prodChicharo"/>
+                <assign variable="sumaChicharo" expression="sumaChicharo+prodChicharo"/>
+            </for>
+            <output expression="&quot;Precio de Chicharo: &quot;" newline="True"/>
+            <input variable="precioChicharo"/>
+            <output expression="&quot;     ---     &quot;" newline="True"/>
+            <assign variable="ventaTotalTomate" expression="sumaTomate * precioTomate"/>
+            <output expression="&quot;Ganancias Tomate: $&quot;&amp;ventaTotalTomate" newline="True"/>
+            <output expression="&quot;     ---     &quot;" newline="True"/>
+            <assign variable="ventaTotalLechuga" expression="sumaLechuga * precioLechuga"/>
+            <output expression="&quot;Ganancias Lechuga: $&quot;&amp;ventaTotalLechuga" newline="True"/>
+            <output expression="&quot;     ---     &quot;" newline="True"/>
+            <assign variable="ventaTotalZanahoria" expression="sumaZanahoria* precioZanahoria"/>
+            <output expression="&quot;Ganancias Zanahoria: $&quot;&amp;ventaTotalZanahoria" newline="True"/>
+            <output expression="&quot;     ---     &quot;" newline="True"/>
+            <assign variable="ventaTotalChicharo" expression="sumaChicharo * precioChicharo"/>
+            <output expression="&quot;Ganancias Chicharo: $&quot;&amp;ventaTotalChicharo" newline="True"/>
+            <if expression="sumaTomate &gt; sumaLechuga &amp;&amp; sumaTomate &gt; sumaZanahoria &amp;&amp; sumaTomate &gt; sumaChicharo">
+                <then>
+                    <output expression="&quot;El producto que mas vendio fue: Tomate: (&quot;&amp;sumaTomate&amp;&quot;)Kg&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="sumaLechuga &gt; sumaTomate &amp;&amp; sumaLechuga &gt; sumaZanahoria &amp;&amp; sumaLechuga &gt; sumaChicharo">
+                <then>
+                    <output expression="&quot;El producto que mas vendio fue: Lechuga (&quot;&amp;sumaLechuga&amp;&quot;)Kg&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="sumaZanahoria &gt; sumaLechuga &amp;&amp; sumaZanahoria &gt; sumaTomate &amp;&amp; sumaZanahoria &gt; sumaChicharo">
+                <then>
+                    <output expression="&quot;El producto que mas vendio fue: Zanahoria (&quot;&amp;sumaZanahoria&amp;&quot;)Kg&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <if expression="sumaChicharo &gt; sumaLechuga &amp;&amp; sumaChicharo &gt; sumaZanahoria &amp;&amp; sumaChicharo &gt; sumaTomate">
+                <then>
+                    <output expression="&quot;El producto que mas vendio fue: Chicharo(&quot;&amp;sumaChicharo&amp;&quot;)Kg&quot;" newline="True"/>
+                </then>
+                <else/>
+            </if>
+            <output expression="&quot;   ---   &quot;" newline="True"/>
+            <output expression="&quot;La produccion del a;o fue: &quot;" newline="True"/>
+            <output expression="&quot;Tomate: &quot;&amp;sumaTomate&amp;&quot;, Lechuga: &quot;&amp;sumaLechuga&amp;&quot;, Zanahoria: &quot;&amp;sumaZanahoria&amp;&quot;, Chicharo: &quot;&amp;sumaChicharo" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa517"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-04 09:47:15 a.m."/>
+        <attribute name="created" value="YWE1MTc7QTUxNzsyMDE4LTA5LTA0OzA5OjA2OjQ5IGEubS47MjAxMA=="/>
+        <attribute name="edited" value="YWE1MTc7QTUxNzsyMDE4LTA5LTA0OzA5OjQ3OjE1IGEubS47MjsyMTE3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Dada una cantidad de botellas se van a acomodar en cajas de 12 botellas, dise&#241;a un algoritmo para determinar las cajas necesarias, as&#237; como las botellas _SUELTAS_ que quedan&quot;" newline="True"/>
+            <declare name="botellas, cajas, sueltas" type="Integer" array="False" size=""/>
+            <output expression="&quot;Ingresa el n&#250;mero de botellas: &quot;" newline="True"/>
+            <input variable="botellas"/>
+            <assign variable="cajas" expression="botellas/12"/>
+            <comment text="El '%(mod)' sirve para darnos el valor decimal de una deivisi&#243;n"/>
+            <assign variable="sueltas" expression="botellas%12"/>
+            <output expression="&quot;La cantidad de cajas es: &quot;&amp;cajas&amp;&quot;, y botellas sueltas son: &quot;&amp;sueltas" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

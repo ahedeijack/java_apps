@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa517"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-08-29 09:17:52 a.m."/>
+        <attribute name="created" value="YWE1MTc7QTUxNzsyMDE4LTA4LTI4OzA5OjQ3OjI0IGEubS47MjAxMw=="/>
+        <attribute name="edited" value="YWE1MTc7QTUxNzsyMDE4LTA4LTI4OzA5OjU0OjMxIGEubS47MTsyMTE3"/>
+        <attribute name="edited" value="YWE1MTY7QTUxNjsyMDE4LTA4LTI5OzA5OjE3OjUyIGEubS47MzsyMTIw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fahr, celcius, grados" type="Real" array="False" size=""/>
+            <declare name="control" type="Boolean" array="False" size=""/>
+            <output expression="&quot;Convertidor de Celcius a Fahrenheit y viceversa&quot;" newline="True"/>
+            <output expression="&quot;Ingresa False si quieres convertir de Celsius a Fah, y True si quieres de Fah a Celcius&quot;" newline="True"/>
+            <input variable="control"/>
+            <if expression="control">
+                <then>
+                    <output expression="&quot;Ingresa tus grados en Fharenheit&quot;" newline="True"/>
+                    <input variable="fahr"/>
+                    <assign variable="grados" expression="4/9*(fahr-32)"/>
+                    <output expression="&quot;Tus grados en Fahrenheit f&#176;&quot;&amp;fahr" newline="False"/>
+                    <output expression="&quot;, y convertidos a Celcius son c&#176;&quot;&amp;grados" newline="False"/>
+                </then>
+                <else>
+                    <output expression="&quot;Ingresa tus grados Celcius&quot;" newline="True"/>
+                    <input variable="celcius"/>
+                    <assign variable="grados" expression="(1.8*celcius)+32"/>
+                    <output expression="&quot;Tus grados en celcius c&#176;&quot;&amp;celcius" newline="False"/>
+                    <output expression="&quot;, y convertidos a Fahrenheit es f&#176;&quot;&amp;grados" newline="False"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,8 @@
+Una tienda tiene una promocion mkediante la cual otorga un descuento, que se calcula promediando los 4
+digitos de su folio de compra. Desarrolle un algoritmo para determinar el pago que debe hacer un cliente
+que compra en dicha tienda.
+
+salida pago 
+entrada folio, compra
+Al ingresar el valor el folio se divide /10 hasta llegar a separar todos los números. Se obtiene el valor del
+Div y el Mod

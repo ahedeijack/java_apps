@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa516"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-09-03 09:51:46 a.m."/>
+        <attribute name="created" value="YWE1MTY7QTUxNjsyMDE4LTA5LTAzOzA5OjQ1OjQ0IGEubS47MjAwNQ=="/>
+        <attribute name="edited" value="YWE1MTY7QTUxNjsyMDE4LTA5LTAzOzA5OjUxOjQ2IGEubS47MjsyMTEz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="dls, mxn, conv" type="Real" array="False" size=""/>
+            <output expression="&quot;Conversion de mxn a dls, ingresa la cantidad de mxn a convertir: &quot;" newline="True"/>
+            <input variable="mxn"/>
+            <assign variable="conv" expression="mxn*19.20"/>
+            <output expression="&quot;El valor de tus &quot; &amp;mxn&amp; &quot;$mxn en en dolares dls es: &quot;&amp;conv&amp; &quot;$dls&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aa504"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2018-10-08 09:41:12 a.m."/>
+        <attribute name="created" value="YWE1MDQ7QTUwNDsyMDE4LTEwLTA4OzA5OjM1OjI1IGEubS47MTk5NA=="/>
+        <attribute name="edited" value="YWE1MDQ7QTUwNDsyMDE4LTEwLTA4OzA5OjQxOjEyIGEubS47MjsyMDk2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b" type="Real" array="False" size=""/>
+            <output expression="&quot;Ingresa el valor A&quot;" newline="False"/>
+            <input variable="a"/>
+            <output expression="&quot;Ingresa el valor de B&quot;" newline="False"/>
+            <input variable="b"/>
+            <if expression="a&gt;b">
+                <then>
+                    <output expression="&quot;Cierto !&quot;" newline="True"/>
+                    <output expression="a&amp;&quot;, es mayor a &quot;&amp;b" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Falso! &quot;" newline="True"/>
+                    <output expression="a&amp;&quot;, es menor a &quot;&amp;b" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
